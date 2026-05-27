@@ -88,14 +88,28 @@
   background-color: transparent;
   border: none;
   font-size: 1.1rem;
-  color: var(--accent-color);
+  color: var(--button-text-color);
   text-transform: lowercase;
   line-height: 1.35;
   padding: 0 0.8rem;
 }
 
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover-outline-color, rgb(255 0 112 / 0.4));
+}
+
+.header__theme-menu-button:active,
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .page-title {
@@ -147,6 +161,14 @@
 .text-link {
   text-decoration: none;
   text-shadow: 1px 1px 0 var(--accent-color, #ff0070);
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.text-link:focus-visible {
+  outline: 1px solid var(--text-color, #f1b2ce);
 }
 
 .article__list-item {
