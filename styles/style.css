@@ -52,6 +52,26 @@
   content: '';
 }
 
+.header__decorative-text {
+  position: absolute;
+  inset-inline-end: 1.25rem;
+  inset-block-start: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--accent-color, #ff0070);
+  text-transform: uppercase;
+}
+
+.header__decorative-text::after {
+  border-radius: 50%;
+  inline-size: 9px;
+  block-size: 9px;
+  content: '';
+  background-color: var(--accent-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+}
+
 .header__theme-menu {
   align-self: end;
   justify-self: end;
@@ -178,6 +198,11 @@
   .decorated-zone::after {
     inset-inline-start: 1.2rem;
     inset-block-end: 1.2rem;
+  }
+
+  .header__decorative-text {
+    inset-inline-end: 1.8rem;
+    inset-block-start: 1.4rem;
   }
 
   .header__theme-menu {
