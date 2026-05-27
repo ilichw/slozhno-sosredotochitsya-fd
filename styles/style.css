@@ -160,3 +160,109 @@
 .page-title_type_footer {
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
+
+/* * * * T A B L E T * * * */
+
+@media (width >= 768px) {
+  .header {
+    padding-block: 5.2rem;
+    grid-template-rows: 1fr min-content 1fr;
+  }
+
+  .decorated-zone::before {
+    inset-inline-end: 1.2rem;
+    inset-block-start: 1.2rem;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 1.2rem;
+    inset-block-end: 1.2rem;
+  }
+
+  .header__theme-menu {
+    align-self: center;
+    margin-inline-end: 0.6rem;
+  }
+
+  .page-title {
+    align-self: center;
+    margin-inline-start: -0.6rem;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__subtitle {
+    justify-self: end;
+    align-self: center;
+    margin-inline-end: 0.6rem;
+    max-inline-size: calc(50% - 0.6rem);
+  }
+
+  .section {
+    margin-block-start: 5rem;
+    padding-inline: 1.2rem;
+  }
+
+  .section_type_top {
+    margin-block-start: 3.75rem;
+  }
+
+  .section_type_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.2rem;
+  }
+
+  .section-title {
+    max-inline-size: calc(100% / 3 - 1.2rem);
+    line-height: 1.35;
+  }
+
+  .section_type_grid .section-title {
+    max-inline-size: 100%;
+  }
+
+  .section_type_grid .article {
+    grid-column: 2;
+    margin-block-start: 0;
+  }
+
+  .gallery {
+    margin-block-start: 1.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .gallery__image {
+    object-fit: cover;
+    object-position: center;
+    align-self: stretch;
+  }
+
+  .gallery__image_type_stretch-horizontally {
+    grid-column: span 2;
+  }
+
+  .gallery__image_type_column-middle {
+    grid-column: 2;
+  }
+
+  .gallery__image_type_column-last {
+    grid-column: 3;
+  }
+
+  .gallery__image_type_stretch-vertically {
+    grid-row: span 2;
+  }
+
+  .footer {
+    margin-block-start: 3.75rem;
+  }
+
+  .page-title_type_footer {
+    margin-inline-start: 0;
+  }
+}
+
+/* * * * D E S K T O P * * * */
+
+@media (width >= 1024px) {}
