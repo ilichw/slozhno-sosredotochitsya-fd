@@ -56,7 +56,7 @@
   position: absolute;
   inset-inline-end: 1.25rem;
   inset-block-start: 0.75rem;
-  display: flex;
+  display: var(--decorative-text-display, flex);
   align-items: center;
   gap: 0.625rem;
   color: var(--accent-color, #ff0070);
@@ -100,7 +100,7 @@
 
 .page-title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: #db00ff;
+  color: var(--title-color, #db00ff);
   line-height: 0.83;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
   padding-block: 1rem;

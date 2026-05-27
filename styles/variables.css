@@ -9,8 +9,10 @@
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --title-color: #db00ff;
 
   --main-font: 'IBM Plex mono';
 
+  --decorative-text-display: flex;
   --section-padding-inline: 0.6rem;
 }
