@@ -10,11 +10,17 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --title-color: #db00ff;
-  --button-text-color: var(var(--accent-color), #ff0070);
+  --button-text-color: var(--accent-color, #ff0070);
   --button-hover-outline-color: rgb(255 0 112 / 0.4);
 
   --main-font: 'IBM Plex mono';
 
   --decorative-text-display: flex;
-  --section-padding-inline: 0.6rem;
+  --section-padding-inline: 0.625rem;
+}
+
+@media (width >= 768px) {
+  :root {
+    --section-padding-inline: 1.25rem;
+  }
 }

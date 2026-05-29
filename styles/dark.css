@@ -15,7 +15,7 @@
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --title-color: #db00ff;
-  --button-text-color: var(var(--accent-color), #ff0070);
+  --button-text-color: var(--accent-color, #ff0070);
   --button-hover-outline-color: rgb(255 0 112 / 0.4);
 
   --decorative-text-display: flex;
